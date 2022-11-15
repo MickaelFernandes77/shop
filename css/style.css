@@ -1,0 +1,197 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* Menu */
+    
+    .menu-list {
+        color: #161616;
+    }
+    
+    .menu-list:hover {
+        color: #707070;
+        border-bottom: solid 2px #ca3b3a;
+    }
+    /* Circulos de opções */
+    
+    .circle {
+        font-size: 11px;
+    }
+    
+    #circle1 {
+        color: #ca3b3a;
+    }
+    
+    #circle2,
+    #circle3 {
+        color: #707070
+    }
+    /* Coluna dos textos */
+    
+    .colunaTextos {
+        margin-top: 22%;
+    }
+    
+    .colunaTextos2 {
+        margin-top: 22%;
+    }
+    
+    .produtoTitulo {
+        color: #ca3b3a;
+        font-weight: 900;
+    }
+    
+    .produtoTexto {
+        color: #161616;
+        font-weight: bold;
+    }
+    
+    .produtoTexto2 {
+        margin-top: -15px;
+        color: #707070;
+        font-size: 13.5px;
+    }
+    
+    .estrela {
+        color: #ca3b3a;
+    }
+    
+    .botao {
+        background-color: #ca3b3a;
+        margin-left: 35px;
+        color: #fff;
+    }
+    
+    .botao:hover {
+        background-color: #df5555;
+    }
+    
+    .preco {
+        color: #161616;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    /* Rodapé Produto */
+    
+    .rodapeProduto {
+        background-color: #ca3b3a;
+        color: #fff;
+        margin-top: 9%;
+    }
+    
+    @media (max-width: 575.98px) {
+        /* Menu */
+        #ul1 {
+            display: none;
+        }
+        .ul1-li {
+            display: none;
+        }
+        /* Divs da imagem do fone */
+        .divFone {
+            margin-right: 8%;
+        }
+        .divFone2 {
+            margin-left: 11%;
+        }
+        /* Coluna Textos */
+        .colunaTextos {
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        .colunaTextos2 {
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        .botao {
+            margin-top: -5px;
+            margin-left: 15px;
+        }
+        /* Rodapé Produto */
+        .rodapeProduto {
+            background-color: #ca3b3a;
+            color: #fff;
+            margin-top: 9%;
+            height: 390px;
+        }
+        .produtoRodapeItem {
+            margin-top: 4%;
+            text-align: center;
+            margin-left: 50%;
+        }
+    }
+    /* Small devices (landscape phones, 576px and up) */
+    
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        /* Divs da imagem do fone */
+        .divFone {
+            margin-right: 15%;
+        }
+        .divFone2 {
+            margin-left: 11%;
+        }
+        /* Coluna Textos */
+        .colunaTextos {
+            margin-top: 12%;
+            margin-left: 20%;
+        }
+        .colunaTextos2 {
+            margin-top: 12%;
+            margin-left: 20%;
+        }
+        .botao {
+            margin-left: 17px;
+        }
+    }
+    /* Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        /* Coluna Textos */
+        .colunaTextos {
+            margin-top: 22%;
+            margin-left: 12%;
+        }
+        .colunaTextos2 {
+            margin-top: 22%;
+            margin-left: 35%;
+        }
+        .botao {
+            margin-left: 7px;
+        }
+    }
+    /* Large devices (desktops, 992px and up) */
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        /* Coluna Textos */
+        .colunaTextos {
+            margin-top: 22%;
+            margin-left: 50%;
+        }
+        .colunaTextos2 {
+            margin-top: 22%;
+            margin-left: 15%;
+        }
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    
+    @media (min-width: 1200px) {
+        .divFone2 {
+            margin-left: 38%;
+        }
+        /* Coluna Textos */
+        .colunaTextos {
+            margin-top: 22%;
+            margin-left: 100%;
+        }
+        /* Coluna Textos */
+        .colunaTextos2 {
+            margin-top: 22%;
+            margin-left: 123%;
+        }
+        /* Rodapé produto */
+        .produtoRodapeItem {
+            text-align: center;
+        }
+    }

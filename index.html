@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icones font-awesome -->
+    <script src="https://kit.fontawesome.com/82c40dad7d.js" crossorigin="anonymous"></script>
+
+    <!-- link google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- inicio nav -->
+        <nav class="navbar navbar-expand-sm d-flex justify-content-around">
+            <a href="#" class="mr-5">
+                <img src="assets/logo.svg" alt="#" width="75" class="img-fluid">
+            </a>
+
+            <ul class="navbar-nav" id="ul1">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark menu-list">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link menu-list text-dark">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link menu-list text-dark">Produtos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link menu-list text-dark">Suporte</a>
+                </li>
+            </ul>
+
+            <p class="d-flex flex-row">
+                <a class="nav-link"><i class="fa-solid fa-magnifying-glass mr-3" style="font-size: 18px;"></i></a>
+                <a class="nav-link"><i class="fa-solid fa-cart-shopping mr-3"></i></a>
+                <a class="nav-link"><i class="fa-solid fa-bars"></i></a>
+            </p>
+        </nav>
+        <!-- fim nav -->
+    </header>
+
+    <section id="p1">
+        <!-- Inicio Produto -->
+        <div class="container d-md-flex">
+            <div class="row">
+                <div class="col" style="margin-top: 25%;">
+                    <div class="sticky-top d-flex flex-column">
+                        <!-- Circulos -->
+                        <a href="#p1"><i class="fa-solid fa-circle mb-5 circle" id="circle1" onclick="active()"></a></i>
+
+                        <a href="#p2"><i class="fa-solid fa-circle mb-5 circle" id="circle2" onclick="active2()" ></i></a>
+
+                        <a href="#p3"><i class="fa-solid fa-circle circle" id="circle3" onclick="active3()"></i></a>
+                        <!-- Fim Circulos -->
+                    </div>
+                </div>
+
+                <div class="col-9 mt-5 divFone">
+                    <img src="assets/fone.png" alt="#" class="img-fluid imgFone" height="100" width="360">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Inicio Coluna Textos -->
+                <div class="col d-flex flex-column colunaTextos">
+                    <h3 class="produtoTitulo ">HYPER X ON-EAR</h3>
+                    <p class="produtoTexto mt-4">Fones de ouvido sem fio</p>
+
+                    <p style="color: #ca3b3a; font-weight: 700; "><span class="mr-3 "><i class="fa-solid fa-star estrela"></i>
+                        <i class="fa-solid fa-star estrela "></i>
+                        <i class="fa-solid fa-star estrela"></i>
+                        <i class="fa-regular fa-star estrela "></i>
+                    </span> 4.2(335)</p>
+
+                    <div>
+                        <p class="produtoTexto">Descrição do Produto</p>
+                        <p class="produtoTexto2">70 mm, dome type (CCAW Voice Col)</p>
+                    </div>
+
+                    <div>
+                        <p class="produtoTexto">Frequência de Resposta</p>
+                        <p class="produtoTexto2">4 Hz + 100.000 Hz</p>
+                    </div>
+
+                    <div class="d-flex">
+                        <p class="preco">$89.99</p>
+                        <button class="btn botao ">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Coluna Textos -->
+        </div>
+        <!-- Fim Produto -->
+
+        <!-- Rodapé Produto -->
+        <div class="container rodapeProduto">
+            <div class="row">
+                <div class="d-flex justify-content-between flex-column flex-sm-row">
+
+                    <div class="col-4 produtoRodapeItem ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-bluetooth " viewBox="0 0 16 16 ">
+                        <path fill-rule="evenodd " d="m8.543 3.948 1.316 1.316L8.543 6.58V3.948Zm0 8.104 1.316-1.316L8.543 9.42v2.632Zm-1.41-4.043L4.275 5.133l.827-.827L7.377 6.58V1.128l4.137 4.136L8.787 8.01l2.745 2.745-4.136 4.137V9.42l-2.294 2.274-.827-.827L7.133
+                        8.01ZM7.903 16c3.498 0 5.904-1.655 5.904-8.01 0-6.335-2.406-7.99-5.903-7.99C4.407 0 2 1.655 2 8.01 2 14.344 4.407 16 7.904 16Z "/></svg> Conexão sem fio usando bluetooth
+                    </div>
+
+                    <div class="col-4 produtoRodapeItem ml-lg-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-battery-full " viewBox="0 0 16 16 ">
+                        <path d="M2 6h10v4H2V6z "/>
+                        <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z "/></svg>                        Bateria que dura até 4 horas de uso
+                    </div>
+
+                    <div class="col-4 produtoRodapeItem ml-lg-3">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-activity " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z "/>
+                            </svg> Alta Resolução de Aúdio
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--  Fim Rodapé Produto -->
+    </section>
+
+    <section id="p2">
+        <!-- Inicio Produto -->
+        <div class="container d-md-flex">
+            <div class="row">
+                <div class="col-12 mt-5 divFone2">
+                    <img src="assets/fone2.png" alt="#" class="img-fluid imgFone" height="100" width="315">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Inicio Coluna Textos -->
+                <div class="col d-flex flex-column colunaTextos2">
+                    <h3 class="produtoTitulo">HYPER X2 ON-EAR</h3>
+                    <p class="produtoTexto mt-4">Fones de ouvido sem fio</p>
+
+                    <p style="color: #ca3b3a; font-weight: 700; "><span class="mr-3 "><i class="fa-solid fa-star estrela"></i>
+                        <i class="fa-solid fa-star estrela "></i>
+                        <i class="fa-solid fa-star estrela"></i>
+                        <i class="fa-regular fa-star estrela "></i>
+                    </span> 4.2(335)</p>
+
+                    <div>
+                        <p class="produtoTexto">Descrição do Produto</p>
+                        <p class="produtoTexto2">80 mm, dome type (CCAW Voice Col)</p>
+                    </div>
+
+                    <div>
+                        <p class="produtoTexto">Frequência de Resposta</p>
+                        <p class="produtoTexto2">5 Hz + 200.000 Hz</p>
+                    </div>
+
+                    <div class="d-flex">
+                        <p class="preco">$100.99</p>
+                        <button class="btn botao ">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Fim Coluna Textos -->
+            </div>
+        </div>
+        <!-- Fim Produto -->
+
+        <!-- Rodapé Produto -->
+        <div class="container rodapeProduto">
+            <div class="row">
+                <div class="d-flex justify-content-between flex-column flex-sm-row">
+                    <div class="col-4 produtoRodapeItem ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-bluetooth " viewBox="0 0 16 16 ">
+                        <path fill-rule="evenodd " d="m8.543 3.948 1.316 1.316L8.543 6.58V3.948Zm0 8.104 1.316-1.316L8.543 9.42v2.632Zm-1.41-4.043L4.275 5.133l.827-.827L7.377 6.58V1.128l4.137 4.136L8.787 8.01l2.745 2.745-4.136 4.137V9.42l-2.294 2.274-.827-.827L7.133
+                        8.01ZM7.903 16c3.498 0 5.904-1.655 5.904-8.01 0-6.335-2.406-7.99-5.903-7.99C4.407 0 2 1.655 2 8.01 2 14.344 4.407 16 7.904 16Z "/></svg> Conexão sem fio usando bluetooth
+                    </div>
+
+                    <div class="col-4 produtoRodapeItem ml-lg-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-battery-full " viewBox="0 0 16 16 ">
+                        <path d="M2 6h10v4H2V6z "/>
+                        <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z "/></svg>                        Bateria que dura até 5 horas de uso
+                    </div>
+
+                    <div class="col-4 produtoRodapeItem ml-lg-3">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-activity " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z "/>
+                            </svg> Alta Resolução de Aúdio
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Fim Rodapé Produto -->
+    </section>
+
+    <section id="p3">
+        <!-- Inicio Produto -->
+        <div class="container d-md-flex">
+            <div class="row">
+                <div class="col-12 mt-5 divFone2">
+                    <img src="assets/fone3.png" alt="#" class="img-fluid imgFone" height="100" width="315">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Inicio Coluna Textos -->
+                <div class="col d-flex flex-column colunaTextos2">
+                    <h3 class="produtoTitulo">HYPER X3 ON-EAR</h3>
+                    <p class="produtoTexto mt-4">Fones de ouvido sem fio</p>
+
+                    <p style="color: #ca3b3a; font-weight: 700; "><span class="mr-3 "><i class="fa-solid fa-star estrela"></i>
+                        <i class="fa-solid fa-star estrela "></i>
+                        <i class="fa-solid fa-star estrela"></i>
+                        <i class="fa-regular fa-star estrela "></i>
+                    </span> 4.2(335)</p>
+
+                    <div>
+                        <p class="produtoTexto">Descrição do Produto</p>
+                        <p class="produtoTexto2">100 mm, dome type (CCAW Voice Col)</p>
+                    </div>
+
+                    <div>
+                        <p class="produtoTexto">Frequência de Resposta</p>
+                        <p class="produtoTexto2">7 Hz + 300.000 Hz</p>
+                    </div>
+
+                    <div class="d-flex">
+                        <p class="preco">$150.99</p>
+                        <button class="btn botao ">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Fim Coluna Textos -->
+            </div>
+        </div>
+
+        <!-- Inicio Rodapé Produto -->
+        <div class="container rodapeProduto">
+            <div class="row">
+                <div class="d-flex justify-content-between flex-column flex-sm-row">
+
+                    <div class="col-4 produtoRodapeItem ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-bluetooth " viewBox="0 0 16 16 ">
+                        <path fill-rule="evenodd " d="m8.543 3.948 1.316 1.316L8.543 6.58V3.948Zm0 8.104 1.316-1.316L8.543 9.42v2.632Zm-1.41-4.043L4.275 5.133l.827-.827L7.377 6.58V1.128l4.137 4.136L8.787 8.01l2.745 2.745-4.136 4.137V9.42l-2.294 2.274-.827-.827L7.133
+                        8.01ZM7.903 16c3.498 0 5.904-1.655 5.904-8.01 0-6.335-2.406-7.99-5.903-7.99C4.407 0 2 1.655 2 8.01 2 14.344 4.407 16 7.904 16Z "/></svg> Conexão sem fio usando bluetooth
+                    </div>
+
+                    <div class="col-4 produtoRodapeItem ml-lg-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-battery-full " viewBox="0 0 16 16 ">
+                        <path d="M2 6h10v4H2V6z "/>
+                        <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z "/></svg>                        Bateria que dura até 7 horas de uso
+                    </div>
+
+                    <div class="col-4 produtoRodapeItem ml-lg-3">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="#fff " class="bi bi-activity " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z "/>
+                            </svg> Alta Resolução de Aúdio
+                    </div>
+
+                </div>
+            </div>
+            <!-- Fim Rodapé Produto -->
+        </div>
+        <!-- Fim Produto -->
+    </section>
+
+
+
+    <!-- Import do Arquivo Javascript -->
+    <script src="js/main.js "></script>
+</body>
+
+</html>
